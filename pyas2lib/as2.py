@@ -389,7 +389,8 @@ class Message:
         # ensure the total length of the message id is no more than 255 characters
         if len(self.message_id) > 255:
             raise ValueError(
-                f"Message ID must be no more than 255 characters for compatibility with some AS2 servers. "
+                "Message ID must be no more than 255 characters for "
+                "compatibility with some AS2 servers. "
                 f"Current message ID length is {len(self.message_id)}."
             )
 
